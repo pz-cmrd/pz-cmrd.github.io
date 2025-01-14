@@ -6,21 +6,33 @@
   color: var(--pico-primary);
 }
 
+.logo {
+  display: block;
+  margin: 15px auto;
+
+  @media (min-width: 1280px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .btn-icon {
   height: 24px;
 }
 
-.discord-btn[role="button"] {
-  --pico-border-color: #5662f6;
+.discord-btn {
+  &[role="button"] {
+    --pico-border-color: #5662f6;
 
-  align-items: center;
-  display: inline-flex;
-  gap: 0.5rem;
-  background-color: #5662f6;
-}
+    align-items: center;
+    display: inline-flex;
+    gap: 0.5rem;
+    background-color: #5662f6;
+  }
 
-.discord-btn:hover {
-  --pico-border-color: #4753f5;
+  &:hover {
+    --pico-border-color: #4753f5;
 
-  background-color: #4753f5;
+    background-color: #4753f5;
+  }
 }
